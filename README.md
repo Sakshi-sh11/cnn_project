@@ -24,27 +24,39 @@ The dataset contains preprocessed images grouped into 7 classes:
 - ## Installation
 
 1.Clone the repository:
+
 git clone https://github.com/Sakshi-sh11/cnn_project.git
+
 cd cnn_project
 
 2.Install the required dependencies:
+
 pip install torch torchvision matplotlib scikit-learn kagglehub
 
 3.Download the dataset via kagglehub in your script:
+
 import kagglehub
+
 path = kagglehub.dataset_download("fahadullaha/facial-emotion-recognition-dataset")
 
 4.Run the main training script:
+
 python cnn_project.py
 
-Model Architecture
+Model Architecture:
+
 The CNN model consists of:
+
 Feature Extractor:
 3 convolutional blocks with Conv2D → ReLU → Conv2D → ReLU → MaxPool 
+
 Number of filters: 32 → 64 → 128
+
 Classifier:
 Linear layers with ReLU and Dropout
+
 Output layer size: 7 (number of emotion classes)
+
 The model will train for 15 epochs and save the best model as best_model.pth
 
 Training
