@@ -23,25 +23,26 @@ The dataset contains preprocessed images grouped into 7 classes:
 - Predict emotions from new images
 - ## Installation
 
-1.Clone the repository:
+1. Clone the repository:
 
-git clone https://github.com/Sakshi-sh11/cnn_project.git
+   git clone https://github.com/Sakshi-sh11/cnn_project.git
 
-cd cnn_project
+   cd cnn_project
 
-2.Install the required dependencies:
+2. Install the required dependencies:
 
-pip install torch torchvision matplotlib scikit-learn kagglehub
+   pip install torch torchvision matplotlib scikit-learn kagglehub
 
-3.Download the dataset via kagglehub in your script:
+3. Download the dataset via kagglehub in your script:
 
-import kagglehub
+   import kagglehub
 
-path = kagglehub.dataset_download("fahadullaha/facial-emotion-recognition-dataset")
+   path = kagglehub.dataset_download("fahadullaha/facial-emotion-recognition-dataset")
 
-4.Run the main training script:
+4. Run the main training script:
 
-python cnn_project.py
+   python cnn_project.py
+
 
 Model Architecture:
 
